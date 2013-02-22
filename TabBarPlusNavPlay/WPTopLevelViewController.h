@@ -8,10 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WPTopLevelViewController : UIViewController
+#import "WPSubLevelAViewController.h"
 
+@interface WPTopLevelViewController : UIViewController {
+
+    WPSubLevelAViewController * subLevelAViewController;
+    
+  //  UINavigationController    * navController;  // don't need to do this, as the framework does it for you!
+    
+}
 
 - (IBAction) userClickedAButton: (id) sender;
+
+//- (void) setNavigationController:(UINavigationController*) navController;  // don't need this!
 
 
 @end

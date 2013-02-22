@@ -18,8 +18,24 @@
 
 @implementation WPAppDelegate
 
+
+// This entire application...didFinishLaunching...
+// code sample is only applicable to Apps that do not use nib instantiated root view controller and main window.
+// If you have an Application.xib or MainWindow.xib (whatever you called it) then this kind of initialization
+// happens quietly and Cocoa does it for you, because it sees that you configured your .plist to have a
+// "Main nib file base name" property. This app does NOT have such a property set.
+//
+
+// It's also not the sort of code you'd expect to find in application...didFinishLaunching...
+// in a storyboard based application.
+
+// This is a "root view and controller created entirely in code in the app delegate, and each view in the
+// main tab bar is in its own nib" type of sample.
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // XCode's default generated code to make the delegate instantiate
+    // the root view of the system, which is a UIWindow.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     // initial demo app had two plain views in tabs. I'm adding a third.
@@ -45,30 +61,33 @@
         
     }
     
+    // First time through I tried to set this, and I found you can't. That might be a clue that
+    // this navigationController is automatically determined because the controllers in a hiearchy become
+    // aware of each other so that they can work together, and this happens inside Cocoa where I can't see it:
+         //navTopLevelViewController.navigationController = navTopLevelViewController;
+    
     // This is a navigation controller. It will be the third item in the
     // main tab bar:
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:navTopLevelViewController];
     
     
     // Even though the navController is the controller for this tab and even though it has a navigationItem and tabBarItem property,
-    // setting them here has no effect:
+    // setting the title here has no effect.  Setting the tabBarItem.image would work if it was done here, but it still should NOT
+    // be done here. It is up to the viewcontroller, not the app delegate, to specify what a view's tab bar item should  look like.
+    // This happens in a view controller somwehere else:
     
-    // In a real app you wouldn't bother setting this:
-    navController.navigationItem.title = NSLocalizedString(@"NotShown", @"NotShown"); // This is overridden by the inner view's text, so it's not shown.
-    
-    
-    //I am commenting the line below. I think it is up to the viewcontroller, not the app delegate, to specify what it should  look like. This is what I was taking about on my SO comment.
-    //http://stackoverflow.com/questions/15027055/in-xcode-4-6-how-do-you-create-a-brand-new-ios-application-combining-a-tabbed-ma/15027584#comment21119765_15027584
-    //navController.tabBarItem.image = [UIImage imageNamed:@"navigate"]; // this however, works.
-    
+    //navController.navigationItem.title = NSLocalizedString(@"NotShown", @"NotShown"); // This wouldn't be shown anyways.
+    //navController.tabBarItem.image = [UIImage imageNamed:@"navigate"]; // This would work but its' the wrong place to do it.
+       // go see where this  IS set: WPTopLevelViewController.m in a [UIViewController initWithNibName: ... bundle: ... ]
 
-   
+    
+    
+    // Here we're creating the tab bar controller and then adding the pages to it.
     self.tabBarController = [[UITabBarController alloc] init];
-     
-     NSArray *tabs = @[navController,viewController1,viewController2 ];
-     
-
+    NSArray *tabs = @[navController,viewController1,viewController2 ];
     self.tabBarController.viewControllers = tabs;
+    
+    // now we have a root view controller object, so tell the UIWindow about it, and then make it show
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

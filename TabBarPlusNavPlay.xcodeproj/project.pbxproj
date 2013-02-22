@@ -12,6 +12,9 @@
 		EF9640C616D7CA92005AA5C3 /* WPTopLevelViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF9640C516D7CA92005AA5C3 /* WPTopLevelViewController_iPad.xib */; };
 		EF9640CA16D7CDEC005AA5C3 /* navigate.png in Resources */ = {isa = PBXBuildFile; fileRef = EF9640C816D7CDEC005AA5C3 /* navigate.png */; };
 		EF9640CB16D7CDEC005AA5C3 /* navigate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF9640C916D7CDEC005AA5C3 /* navigate@2x.png */; };
+		EF9640CF16D7F074005AA5C3 /* WPSubLevelAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9640CD16D7F074005AA5C3 /* WPSubLevelAViewController.m */; };
+		EF9640D016D7F074005AA5C3 /* WPSubLevelAViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF9640CE16D7F074005AA5C3 /* WPSubLevelAViewController_iPhone.xib */; };
+		EF9640D216D7F7B3005AA5C3 /* WPSubLevelAViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF9640D116D7F7B3005AA5C3 /* WPSubLevelAViewController_iPad.xib */; };
 		EFBFAC2C16D7C7EB00CA0BAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFBFAC2B16D7C7EB00CA0BAB /* UIKit.framework */; };
 		EFBFAC2E16D7C7EB00CA0BAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFBFAC2D16D7C7EB00CA0BAB /* Foundation.framework */; };
 		EFBFAC3016D7C7EB00CA0BAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFBFAC2F16D7C7EB00CA0BAB /* CoreGraphics.framework */; };
@@ -55,6 +58,10 @@
 		EF9640C516D7CA92005AA5C3 /* WPTopLevelViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WPTopLevelViewController_iPad.xib; sourceTree = "<group>"; };
 		EF9640C816D7CDEC005AA5C3 /* navigate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigate.png; sourceTree = "<group>"; };
 		EF9640C916D7CDEC005AA5C3 /* navigate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigate@2x.png"; sourceTree = "<group>"; };
+		EF9640CC16D7F074005AA5C3 /* WPSubLevelAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPSubLevelAViewController.h; sourceTree = "<group>"; };
+		EF9640CD16D7F074005AA5C3 /* WPSubLevelAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPSubLevelAViewController.m; sourceTree = "<group>"; };
+		EF9640CE16D7F074005AA5C3 /* WPSubLevelAViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WPSubLevelAViewController_iPhone.xib; sourceTree = "<group>"; };
+		EF9640D116D7F7B3005AA5C3 /* WPSubLevelAViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WPSubLevelAViewController_iPad.xib; sourceTree = "<group>"; };
 		EFBFAC2816D7C7EB00CA0BAB /* TabBarPlusNavPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarPlusNavPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFBFAC2B16D7C7EB00CA0BAB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EFBFAC2D16D7C7EB00CA0BAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -145,11 +152,15 @@
 		EFBFAC3116D7C7EB00CA0BAB /* TabBarPlusNavPlay */ = {
 			isa = PBXGroup;
 			children = (
+				EF9640D116D7F7B3005AA5C3 /* WPSubLevelAViewController_iPad.xib */,
 				EF9640C816D7CDEC005AA5C3 /* navigate.png */,
 				EF9640C916D7CDEC005AA5C3 /* navigate@2x.png */,
 				EF9640C016D7CA62005AA5C3 /* WPTopLevelViewController.h */,
 				EF9640C116D7CA62005AA5C3 /* WPTopLevelViewController.m */,
 				EF9640C216D7CA62005AA5C3 /* WPTopLevelViewController_iPhone.xib */,
+				EF9640CC16D7F074005AA5C3 /* WPSubLevelAViewController.h */,
+				EF9640CD16D7F074005AA5C3 /* WPSubLevelAViewController.m */,
+				EF9640CE16D7F074005AA5C3 /* WPSubLevelAViewController_iPhone.xib */,
 				EF9640C516D7CA92005AA5C3 /* WPTopLevelViewController_iPad.xib */,
 				EFBFAC3A16D7C7EB00CA0BAB /* WPAppDelegate.h */,
 				EFBFAC3B16D7C7EB00CA0BAB /* WPAppDelegate.m */,
@@ -291,6 +302,8 @@
 				EF9640C616D7CA92005AA5C3 /* WPTopLevelViewController_iPad.xib in Resources */,
 				EF9640CA16D7CDEC005AA5C3 /* navigate.png in Resources */,
 				EF9640CB16D7CDEC005AA5C3 /* navigate@2x.png in Resources */,
+				EF9640D016D7F074005AA5C3 /* WPSubLevelAViewController_iPhone.xib in Resources */,
+				EF9640D216D7F7B3005AA5C3 /* WPSubLevelAViewController_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +343,7 @@
 				EFBFAC4516D7C7EB00CA0BAB /* WPFirstViewController.m in Sources */,
 				EFBFAC4C16D7C7EB00CA0BAB /* WPSecondViewController.m in Sources */,
 				EF9640C316D7CA62005AA5C3 /* WPTopLevelViewController.m in Sources */,
+				EF9640CF16D7F074005AA5C3 /* WPSubLevelAViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
