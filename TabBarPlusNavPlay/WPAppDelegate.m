@@ -54,7 +54,10 @@
     // In a real app you wouldn't bother setting this:
     navController.navigationItem.title = NSLocalizedString(@"NotShown", @"NotShown"); // This is overridden by the inner view's text, so it's not shown.
     
-    navController.tabBarItem.image = [UIImage imageNamed:@"navigate"]; // this however, works.
+    
+    //I am commenting the line below. I think it is up to the viewcontroller, not the app delegate, to specify what it should  look like. This is what I was taking about on my SO comment.
+    //http://stackoverflow.com/questions/15027055/in-xcode-4-6-how-do-you-create-a-brand-new-ios-application-combining-a-tabbed-ma/15027584#comment21119765_15027584
+    //navController.tabBarItem.image = [UIImage imageNamed:@"navigate"]; // this however, works.
     
 
    
