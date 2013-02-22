@@ -10,4 +10,8 @@
 
 @interface WPTopLevelViewController : UIViewController
 
+
+- (IBAction) userClickedAButton: (id) sender;
+
+
 @end

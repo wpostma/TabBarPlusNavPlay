@@ -38,4 +38,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+// show a second view, which makes the navigation controller actually do something interesting.
+
+- (IBAction) userClickedAButton: (id) sender {
+    //
+    NSLog(@"User wants to see another level"); 
+}
+
 @end
