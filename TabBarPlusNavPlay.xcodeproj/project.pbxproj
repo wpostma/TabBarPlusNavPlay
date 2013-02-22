@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFBFAC2C16D7C7EB00CA0BAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFBFAC2B16D7C7EB00CA0BAB /* UIKit.framework */; };
+		EFBFAC2E16D7C7EB00CA0BAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFBFAC2D16D7C7EB00CA0BAB /* Foundation.framework */; };
+		EFBFAC3016D7C7EB00CA0BAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFBFAC2F16D7C7EB00CA0BAB /* CoreGraphics.framework */; };
+		EFBFAC3616D7C7EB00CA0BAB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EFBFAC3416D7C7EB00CA0BAB /* InfoPlist.strings */; };
+		EFBFAC3816D7C7EB00CA0BAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBFAC3716D7C7EB00CA0BAB /* main.m */; };
+		EFBFAC3C16D7C7EB00CA0BAB /* WPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBFAC3B16D7C7EB00CA0BAB /* WPAppDelegate.m */; };
+		EFBFAC3E16D7C7EB00CA0BAB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EFBFAC3D16D7C7EB00CA0BAB /* Default.png */; };
+		EFBFAC4016D7C7EB00CA0BAB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFBFAC3F16D7C7EB00CA0BAB /* Default@2x.png */; };
+		EFBFAC4216D7C7EB00CA0BAB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFBFAC4116D7C7EB00CA0BAB /* Default-568h@2x.png */; };
+		EFBFAC4516D7C7EB00CA0BAB /* WPFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBFAC4416D7C7EB00CA0BAB /* WPFirstViewController.m */; };
+		EFBFAC4716D7C7EB00CA0BAB /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = EFBFAC4616D7C7EB00CA0BAB /* first.png */; };
+		EFBFAC4916D7C7EB00CA0BAB /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFBFAC4816D7C7EB00CA0BAB /* first@2x.png */; };
+		EFBFAC4C16D7C7EB00CA0BAB /* WPSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBFAC4B16D7C7EB00CA0BAB /* WPSecondViewController.m */; };
+		EFBFAC4E16D7C7EB00CA0BAB /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = EFBFAC4D16D7C7EB00CA0BAB /* second.png */; };
+		EFBFAC5016D7C7EB00CA0BAB /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFBFAC4F16D7C7EB00CA0BAB /* second@2x.png */; };
+		EFBFAC5316D7C7EB00CA0BAB /* WPFirstViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFBFAC5116D7C7EB00CA0BAB /* WPFirstViewController_iPhone.xib */; };
+		EFBFAC5616D7C7EB00CA0BAB /* WPFirstViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFBFAC5416D7C7EB00CA0BAB /* WPFirstViewController_iPad.xib */; };
+		EFBFAC5916D7C7EB00CA0BAB /* WPSecondViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFBFAC5716D7C7EB00CA0BAB /* WPSecondViewController_iPhone.xib */; };
+		EFBFAC5C16D7C7EB00CA0BAB /* WPSecondViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFBFAC5A16D7C7EB00CA0BAB /* WPSecondViewController_iPad.xib */; };
+		EFBFAC6416D7C7EB00CA0BAB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFBFAC6316D7C7EB00CA0BAB /* SenTestingKit.framework */; };
+		EFBFAC6516D7C7EB00CA0BAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFBFAC2B16D7C7EB00CA0BAB /* UIKit.framework */; };
+		EFBFAC6616D7C7EB00CA0BAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFBFAC2D16D7C7EB00CA0BAB /* Foundation.framework */; };
+		EFBFAC6E16D7C7EB00CA0BAB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EFBFAC6C16D7C7EB00CA0BAB /* InfoPlist.strings */; };
+		EFBFAC7116D7C7EB00CA0BAB /* TabBarPlusNavPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBFAC7016D7C7EB00CA0BAB /* TabBarPlusNavPlayTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFBFAC6716D7C7EB00CA0BAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFBFAC2016D7C7EB00CA0BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFBFAC2716D7C7EB00CA0BAB;
+			remoteInfo = TabBarPlusNavPlay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EFBFAC2816D7C7EB00CA0BAB /* TabBarPlusNavPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarPlusNavPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFBFAC2B16D7C7EB00CA0BAB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EFBFAC2D16D7C7EB00CA0BAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EFBFAC2F16D7C7EB00CA0BAB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EFBFAC3316D7C7EB00CA0BAB /* TabBarPlusNavPlay-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TabBarPlusNavPlay-Info.plist"; sourceTree = "<group>"; };
+		EFBFAC3516D7C7EB00CA0BAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EFBFAC3716D7C7EB00CA0BAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EFBFAC3916D7C7EB00CA0BAB /* TabBarPlusNavPlay-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TabBarPlusNavPlay-Prefix.pch"; sourceTree = "<group>"; };
+		EFBFAC3A16D7C7EB00CA0BAB /* WPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPAppDelegate.h; sourceTree = "<group>"; };
+		EFBFAC3B16D7C7EB00CA0BAB /* WPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPAppDelegate.m; sourceTree = "<group>"; };
+		EFBFAC3D16D7C7EB00CA0BAB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		EFBFAC3F16D7C7EB00CA0BAB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		EFBFAC4116D7C7EB00CA0BAB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EFBFAC4316D7C7EB00CA0BAB /* WPFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPFirstViewController.h; sourceTree = "<group>"; };
+		EFBFAC4416D7C7EB00CA0BAB /* WPFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPFirstViewController.m; sourceTree = "<group>"; };
+		EFBFAC4616D7C7EB00CA0BAB /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		EFBFAC4816D7C7EB00CA0BAB /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		EFBFAC4A16D7C7EB00CA0BAB /* WPSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPSecondViewController.h; sourceTree = "<group>"; };
+		EFBFAC4B16D7C7EB00CA0BAB /* WPSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPSecondViewController.m; sourceTree = "<group>"; };
+		EFBFAC4D16D7C7EB00CA0BAB /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		EFBFAC4F16D7C7EB00CA0BAB /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		EFBFAC5216D7C7EB00CA0BAB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WPFirstViewController_iPhone.xib; sourceTree = "<group>"; };
+		EFBFAC5516D7C7EB00CA0BAB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WPFirstViewController_iPad.xib; sourceTree = "<group>"; };
+		EFBFAC5816D7C7EB00CA0BAB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WPSecondViewController_iPhone.xib; sourceTree = "<group>"; };
+		EFBFAC5B16D7C7EB00CA0BAB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WPSecondViewController_iPad.xib; sourceTree = "<group>"; };
+		EFBFAC6216D7C7EB00CA0BAB /* TabBarPlusNavPlayTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabBarPlusNavPlayTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFBFAC6316D7C7EB00CA0BAB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		EFBFAC6B16D7C7EB00CA0BAB /* TabBarPlusNavPlayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TabBarPlusNavPlayTests-Info.plist"; sourceTree = "<group>"; };
+		EFBFAC6D16D7C7EB00CA0BAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EFBFAC6F16D7C7EB00CA0BAB /* TabBarPlusNavPlayTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarPlusNavPlayTests.h; sourceTree = "<group>"; };
+		EFBFAC7016D7C7EB00CA0BAB /* TabBarPlusNavPlayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarPlusNavPlayTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFBFAC2516D7C7EB00CA0BAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFBFAC2C16D7C7EB00CA0BAB /* UIKit.framework in Frameworks */,
+				EFBFAC2E16D7C7EB00CA0BAB /* Foundation.framework in Frameworks */,
+				EFBFAC3016D7C7EB00CA0BAB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFBFAC5E16D7C7EB00CA0BAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFBFAC6416D7C7EB00CA0BAB /* SenTestingKit.framework in Frameworks */,
+				EFBFAC6516D7C7EB00CA0BAB /* UIKit.framework in Frameworks */,
+				EFBFAC6616D7C7EB00CA0BAB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFBFAC1F16D7C7EB00CA0BAB = {
+			isa = PBXGroup;
+			children = (
+				EFBFAC3116D7C7EB00CA0BAB /* TabBarPlusNavPlay */,
+				EFBFAC6916D7C7EB00CA0BAB /* TabBarPlusNavPlayTests */,
+				EFBFAC2A16D7C7EB00CA0BAB /* Frameworks */,
+				EFBFAC2916D7C7EB00CA0BAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFBFAC2916D7C7EB00CA0BAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFBFAC2816D7C7EB00CA0BAB /* TabBarPlusNavPlay.app */,
+				EFBFAC6216D7C7EB00CA0BAB /* TabBarPlusNavPlayTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFBFAC2A16D7C7EB00CA0BAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFBFAC2B16D7C7EB00CA0BAB /* UIKit.framework */,
+				EFBFAC2D16D7C7EB00CA0BAB /* Foundation.framework */,
+				EFBFAC2F16D7C7EB00CA0BAB /* CoreGraphics.framework */,
+				EFBFAC6316D7C7EB00CA0BAB /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFBFAC3116D7C7EB00CA0BAB /* TabBarPlusNavPlay */ = {
+			isa = PBXGroup;
+			children = (
+				EFBFAC3A16D7C7EB00CA0BAB /* WPAppDelegate.h */,
+				EFBFAC3B16D7C7EB00CA0BAB /* WPAppDelegate.m */,
+				EFBFAC4316D7C7EB00CA0BAB /* WPFirstViewController.h */,
+				EFBFAC4416D7C7EB00CA0BAB /* WPFirstViewController.m */,
+				EFBFAC4616D7C7EB00CA0BAB /* first.png */,
+				EFBFAC4816D7C7EB00CA0BAB /* first@2x.png */,
+				EFBFAC4A16D7C7EB00CA0BAB /* WPSecondViewController.h */,
+				EFBFAC4B16D7C7EB00CA0BAB /* WPSecondViewController.m */,
+				EFBFAC4D16D7C7EB00CA0BAB /* second.png */,
+				EFBFAC4F16D7C7EB00CA0BAB /* second@2x.png */,
+				EFBFAC5116D7C7EB00CA0BAB /* WPFirstViewController_iPhone.xib */,
+				EFBFAC5416D7C7EB00CA0BAB /* WPFirstViewController_iPad.xib */,
+				EFBFAC5716D7C7EB00CA0BAB /* WPSecondViewController_iPhone.xib */,
+				EFBFAC5A16D7C7EB00CA0BAB /* WPSecondViewController_iPad.xib */,
+				EFBFAC3216D7C7EB00CA0BAB /* Supporting Files */,
+			);
+			path = TabBarPlusNavPlay;
+			sourceTree = "<group>";
+		};
+		EFBFAC3216D7C7EB00CA0BAB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFBFAC3316D7C7EB00CA0BAB /* TabBarPlusNavPlay-Info.plist */,
+				EFBFAC3416D7C7EB00CA0BAB /* InfoPlist.strings */,
+				EFBFAC3716D7C7EB00CA0BAB /* main.m */,
+				EFBFAC3916D7C7EB00CA0BAB /* TabBarPlusNavPlay-Prefix.pch */,
+				EFBFAC3D16D7C7EB00CA0BAB /* Default.png */,
+				EFBFAC3F16D7C7EB00CA0BAB /* Default@2x.png */,
+				EFBFAC4116D7C7EB00CA0BAB /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EFBFAC6916D7C7EB00CA0BAB /* TabBarPlusNavPlayTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFBFAC6F16D7C7EB00CA0BAB /* TabBarPlusNavPlayTests.h */,
+				EFBFAC7016D7C7EB00CA0BAB /* TabBarPlusNavPlayTests.m */,
+				EFBFAC6A16D7C7EB00CA0BAB /* Supporting Files */,
+			);
+			path = TabBarPlusNavPlayTests;
+			sourceTree = "<group>";
+		};
+		EFBFAC6A16D7C7EB00CA0BAB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFBFAC6B16D7C7EB00CA0BAB /* TabBarPlusNavPlayTests-Info.plist */,
+				EFBFAC6C16D7C7EB00CA0BAB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFBFAC2716D7C7EB00CA0BAB /* TabBarPlusNavPlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFBFAC7416D7C7EB00CA0BAB /* Build configuration list for PBXNativeTarget "TabBarPlusNavPlay" */;
+			buildPhases = (
+				EFBFAC2416D7C7EB00CA0BAB /* Sources */,
+				EFBFAC2516D7C7EB00CA0BAB /* Frameworks */,
+				EFBFAC2616D7C7EB00CA0BAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TabBarPlusNavPlay;
+			productName = TabBarPlusNavPlay;
+			productReference = EFBFAC2816D7C7EB00CA0BAB /* TabBarPlusNavPlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFBFAC6116D7C7EB00CA0BAB /* TabBarPlusNavPlayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFBFAC7716D7C7EB00CA0BAB /* Build configuration list for PBXNativeTarget "TabBarPlusNavPlayTests" */;
+			buildPhases = (
+				EFBFAC5D16D7C7EB00CA0BAB /* Sources */,
+				EFBFAC5E16D7C7EB00CA0BAB /* Frameworks */,
+				EFBFAC5F16D7C7EB00CA0BAB /* Resources */,
+				EFBFAC6016D7C7EB00CA0BAB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFBFAC6816D7C7EB00CA0BAB /* PBXTargetDependency */,
+			);
+			name = TabBarPlusNavPlayTests;
+			productName = TabBarPlusNavPlayTests;
+			productReference = EFBFAC6216D7C7EB00CA0BAB /* TabBarPlusNavPlayTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFBFAC2016D7C7EB00CA0BAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WP;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Warren Postma";
+			};
+			buildConfigurationList = EFBFAC2316D7C7EB00CA0BAB /* Build configuration list for PBXProject "TabBarPlusNavPlay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EFBFAC1F16D7C7EB00CA0BAB;
+			productRefGroup = EFBFAC2916D7C7EB00CA0BAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFBFAC2716D7C7EB00CA0BAB /* TabBarPlusNavPlay */,
+				EFBFAC6116D7C7EB00CA0BAB /* TabBarPlusNavPlayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFBFAC2616D7C7EB00CA0BAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFBFAC3616D7C7EB00CA0BAB /* InfoPlist.strings in Resources */,
+				EFBFAC3E16D7C7EB00CA0BAB /* Default.png in Resources */,
+				EFBFAC4016D7C7EB00CA0BAB /* Default@2x.png in Resources */,
+				EFBFAC4216D7C7EB00CA0BAB /* Default-568h@2x.png in Resources */,
+				EFBFAC4716D7C7EB00CA0BAB /* first.png in Resources */,
+				EFBFAC4916D7C7EB00CA0BAB /* first@2x.png in Resources */,
+				EFBFAC4E16D7C7EB00CA0BAB /* second.png in Resources */,
+				EFBFAC5016D7C7EB00CA0BAB /* second@2x.png in Resources */,
+				EFBFAC5316D7C7EB00CA0BAB /* WPFirstViewController_iPhone.xib in Resources */,
+				EFBFAC5616D7C7EB00CA0BAB /* WPFirstViewController_iPad.xib in Resources */,
+				EFBFAC5916D7C7EB00CA0BAB /* WPSecondViewController_iPhone.xib in Resources */,
+				EFBFAC5C16D7C7EB00CA0BAB /* WPSecondViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFBFAC5F16D7C7EB00CA0BAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFBFAC6E16D7C7EB00CA0BAB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EFBFAC6016D7C7EB00CA0BAB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFBFAC2416D7C7EB00CA0BAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFBFAC3816D7C7EB00CA0BAB /* main.m in Sources */,
+				EFBFAC3C16D7C7EB00CA0BAB /* WPAppDelegate.m in Sources */,
+				EFBFAC4516D7C7EB00CA0BAB /* WPFirstViewController.m in Sources */,
+				EFBFAC4C16D7C7EB00CA0BAB /* WPSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFBFAC5D16D7C7EB00CA0BAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFBFAC7116D7C7EB00CA0BAB /* TabBarPlusNavPlayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFBFAC6816D7C7EB00CA0BAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFBFAC2716D7C7EB00CA0BAB /* TabBarPlusNavPlay */;
+			targetProxy = EFBFAC6716D7C7EB00CA0BAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EFBFAC3416D7C7EB00CA0BAB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFBFAC3516D7C7EB00CA0BAB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EFBFAC5116D7C7EB00CA0BAB /* WPFirstViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFBFAC5216D7C7EB00CA0BAB /* en */,
+			);
+			name = WPFirstViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		EFBFAC5416D7C7EB00CA0BAB /* WPFirstViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFBFAC5516D7C7EB00CA0BAB /* en */,
+			);
+			name = WPFirstViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		EFBFAC5716D7C7EB00CA0BAB /* WPSecondViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFBFAC5816D7C7EB00CA0BAB /* en */,
+			);
+			name = WPSecondViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		EFBFAC5A16D7C7EB00CA0BAB /* WPSecondViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFBFAC5B16D7C7EB00CA0BAB /* en */,
+			);
+			name = WPSecondViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		EFBFAC6C16D7C7EB00CA0BAB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFBFAC6D16D7C7EB00CA0BAB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFBFAC7216D7C7EB00CA0BAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFBFAC7316D7C7EB00CA0BAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFBFAC7516D7C7EB00CA0BAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TabBarPlusNavPlay/TabBarPlusNavPlay-Prefix.pch";
+				INFOPLIST_FILE = "TabBarPlusNavPlay/TabBarPlusNavPlay-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EFBFAC7616D7C7EB00CA0BAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TabBarPlusNavPlay/TabBarPlusNavPlay-Prefix.pch";
+				INFOPLIST_FILE = "TabBarPlusNavPlay/TabBarPlusNavPlay-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EFBFAC7816D7C7EB00CA0BAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TabBarPlusNavPlay.app/TabBarPlusNavPlay";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TabBarPlusNavPlay/TabBarPlusNavPlay-Prefix.pch";
+				INFOPLIST_FILE = "TabBarPlusNavPlayTests/TabBarPlusNavPlayTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		EFBFAC7916D7C7EB00CA0BAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TabBarPlusNavPlay.app/TabBarPlusNavPlay";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TabBarPlusNavPlay/TabBarPlusNavPlay-Prefix.pch";
+				INFOPLIST_FILE = "TabBarPlusNavPlayTests/TabBarPlusNavPlayTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFBFAC2316D7C7EB00CA0BAB /* Build configuration list for PBXProject "TabBarPlusNavPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFBFAC7216D7C7EB00CA0BAB /* Debug */,
+				EFBFAC7316D7C7EB00CA0BAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFBFAC7416D7C7EB00CA0BAB /* Build configuration list for PBXNativeTarget "TabBarPlusNavPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFBFAC7516D7C7EB00CA0BAB /* Debug */,
+				EFBFAC7616D7C7EB00CA0BAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EFBFAC7716D7C7EB00CA0BAB /* Build configuration list for PBXNativeTarget "TabBarPlusNavPlayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFBFAC7816D7C7EB00CA0BAB /* Debug */,
+				EFBFAC7916D7C7EB00CA0BAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFBFAC2016D7C7EB00CA0BAB /* Project object */;
+}
