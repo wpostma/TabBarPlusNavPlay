@@ -12,22 +12,58 @@
 
 #import "WPSecondViewController.h"
 
+#import "WPTopLevelViewController.h"
+
 @implementation WPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    UIViewController *viewController1, *viewController2;
+    
+    // initial demo app had two plain views in tabs. I'm adding a third.
+    
+    UIViewController *navTopLevelViewController; // I'm adding this view inside the navigation controller.
+    UIViewController *viewController1, *viewController2; // these views came already inside this new app.
+    
+    // The apple sample assumes you want a universal app that can load up a different nib for iPhone and iPad.
+    
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        
         viewController1 = [[WPFirstViewController alloc] initWithNibName:@"WPFirstViewController_iPhone" bundle:nil];
         viewController2 = [[WPSecondViewController alloc] initWithNibName:@"WPSecondViewController_iPhone" bundle:nil];
+        
+        navTopLevelViewController = [[WPTopLevelViewController alloc] initWithNibName:@"WPTopLevelViewController_iPhone" bundle:nil];
+        
     } else {
+        
         viewController1 = [[WPFirstViewController alloc] initWithNibName:@"WPFirstViewController_iPad" bundle:nil];
         viewController2 = [[WPSecondViewController alloc] initWithNibName:@"WPSecondViewController_iPad" bundle:nil];
+        
+        navTopLevelViewController = [[WPTopLevelViewController alloc] initWithNibName:@"WPTopLevelViewController_iPad" bundle:nil];
+        
     }
+    
+    // This is a navigation controller. It will be the third item in the
+    // main tab bar:
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:navTopLevelViewController];
+    
+    
+    // Even though the navController is the controller for this tab and even though it has a navigationItem and tabBarItem property,
+    // setting them here has no effect:
+    
+    // In a real app you wouldn't bother setting this:
+    navController.navigationItem.title = NSLocalizedString(@"NotShown", @"NotShown"); // This is overridden by the inner view's text, so it's not shown.
+    
+    navController.tabBarItem.image = [UIImage imageNamed:@"navigate"]; // this however, works.
+    
+
+   
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[viewController1, viewController2];
+     
+     NSArray *tabs = @[navController,viewController1,viewController2 ];
+     
+
+    self.tabBarController.viewControllers = tabs;
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
